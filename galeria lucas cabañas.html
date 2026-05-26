@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería de Fotos</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+}
+
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:20px;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:10px 20px;
+border-radius:12px;
+transition:0.3s;
+}
+
+nav a:hover{
+background:#2563eb;
+}
+
+
+header{
+text-align:center;
+padding:50px 20px;
+}
+
+h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+header p{
+font-size:20px;
+color:#cbd5e1;
+}
+
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+max-width:1200px;
+margin:auto;
+}
+
+.galeria img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:20px;
+transition:0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Galería de Fotos de Lucas</h1>
+
+<p>
+Aquí podrás ver algunas de mis mejores fotos personales.
+</p>
+
+</header>
+
+<section class="galeria">
+
+<img src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.44.jpeg" alt="Foto 1">
+
+<img src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.44 (1).jpeg" alt="Foto 2">
+
+<img src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.46.jpeg" alt="Foto 3">
+
+<img src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.46 (1).jpeg" alt="Foto 4">
+
+<img src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.48.jpeg" alt="Foto 5">
+
+<img src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.49.jpeg" alt="Foto 6">
+
+<img src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.50.jpeg" alt="Foto 7">
+
+<img src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.50 (1).jpeg" alt="Foto 8">
+
+<img src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.53.jpeg" alt="Foto 9">
+
+<img src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.54.jpeg" alt="Foto 10">
+
+</section>
+
+<footer>
+Galería Personal - Lucas Cabañas
+</footer>
+
+</body>
+</html>

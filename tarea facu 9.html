@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Dororo - Anime</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#0b1220;
+    color:white;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    padding:20px;
+}
+
+header::before{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:#ef4444;
+    filter:blur(180px);
+    border-radius:50%;
+    animation:move 6s infinite alternate;
+}
+
+@keyframes move{
+    from{transform:translate(-150px,-80px);}
+    to{transform:translate(150px,80px);}
+}
+
+h1{
+    font-size:70px;
+    z-index:2;
+}
+
+.subtitle{
+    font-size:18px;
+    max-width:900px;
+    margin-top:20px;
+    line-height:1.8;
+    z-index:2;
+    color:#cbd5e1;
+}
+
+section{
+    padding:60px 10%;
+}
+
+.card{
+    background:rgba(255,255,255,0.06);
+    border-radius:25px;
+    padding:30px;
+    margin-bottom:30px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.02);
+}
+
+h2{
+    color:#f87171;
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    gap:20px;
+}
+
+.character{
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    transition:0.3s;
+}
+
+.character:hover{
+    transform:scale(1.05);
+}
+
+.character img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.character p{
+    padding:10px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+    color:#e2e8f0;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:#1d4ed8;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+}
+
+.bigimg{
+    width:100%;
+    border-radius:20px;
+    margin-top:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+th{
+    background:#ef4444;
+    padding:15px;
+}
+
+td{
+    background:rgba(255,255,255,0.08);
+    padding:15px;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>⚔️ Dororo</h1>
+
+    <p class="subtitle">
+        Un anime oscuro y emotivo que narra el viaje de Hyakkimaru
+        para recuperar su cuerpo perdido que fue dado como sacrificio a demonios por su padre para tener riquezas, acompañado por Dororo en un mundo lleno de demonios.
+    </p>
+
+</header>
+
+<section>
+
+    <div class="card">
+
+        <h2> Historia</h2>
+
+        <p>
+            Cuenta la historia de Hyakkimaru,
+            un joven que al nacer perdio las partes de su cuerpo por un pacto demoníaco realizado por su padre.
+        </p>
+
+        <p>
+            A lo largo de su viaje enfrenta demonios uno por uno para recuperar lo que le fue arrebatado,
+            descubriendo el significado de la humanidad y el sufrimiento.
+        </p>
+
+        <img class="bigimg" src="https://images.unsplash.com/photo-1541560052-77ec1bbc09f8">
+
+    </div>
+
+    <div class="card">
+
+        <h2> Personajes Principales</h2>
+
+        <div class="grid">
+
+            <div class="character">
+                <img src="https://i.redd.it/lponhn26rnzf1.jpeg">
+                <p> Hyakkimaru</p>
+            </div>
+
+            <div class="character">
+                <img src="https://www.lascosasquenoshacenfelices.com/wp-content/uploads/2019/07/dororo-cosasfelices-rese%C3%B1a.jpg">
+                <p> Dororo</p>
+            </div>
+
+            <div class="character">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCoV-7qMQ-1-6-1bXELWXAA18BCw5bSnAOtA&s">
+                <p> Demonios</p>
+            </div>
+
+            <div class="character">
+                <img src="https://static.wikia.nocookie.net/glad-you-came/images/8/8b/Daigo_.png/revision/latest?cb=20230617020751">
+                <p> Daigo Kagemitsu</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2> Temas Principales</h2>
+
+        <ul>
+            <li> Venganza</li>
+            <li> Sacrificio</li>
+            <li> Demonios</li>
+            <li> Identidad</li>
+            <li> Humanidad</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2> Tabla de Personajes</h2>
+
+        <table>
+
+            <tr>
+                <th>Personaje</th>
+                <th>Rol</th>
+                <th>Importancia</th>
+            </tr>
+
+            <tr>
+                <td>Hyakkimaru</td>
+                <td>Protagonista</td>
+                <td>Recuperar su cuerpo asesinando demonios</td>
+            </tr>
+
+            <tr>
+                <td>Dororo</td>
+                <td>Compañero</td>
+                <td>Apoyo emocional y acompañamiento durante las aventuras de hyakkimaru</td>
+            </tr>
+
+            <tr>
+                <td>Daigo</td>
+                <td>Antagonista</td>
+                <td>Padre de Hyakkimaru, el causante de todas las tragedias</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h2> Opinión Personal</h2>
+
+        <p>
+            Este anime es muy profundo porque no solo trata de acción,
+            sino también de emociones, sufrimiento y humanidad.
+            Es una historia que muestra cómo el dolor puede cambiar a las personas.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    Dororo © 2026 - Página estilo anime 
+</footer>
+
+</body>
+</html>

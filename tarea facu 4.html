@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LambaTech - Soporte Técnico</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color:white;
+            overflow-x:hidden;
+        }
+
+        header{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            padding:40px;
+            position:relative;
+        }
+
+        header::before{
+            content:"";
+            position:absolute;
+            width:350px;
+            height:350px;
+            background:#2563eb;
+            border-radius:50%;
+            filter:blur(130px);
+            animation:mover 6s infinite alternate;
+        }
+
+        @keyframes mover{
+            from{
+                transform:translate(-100px,-50px);
+            }
+            to{
+                transform:translate(100px,50px);
+            }
+        }
+
+        .logo{
+            font-size:90px;
+            margin-bottom:20px;
+            z-index:2;
+            animation:flotar 3s ease-in-out infinite;
+        }
+
+        @keyframes flotar{
+            0%{ transform:translateY(0px); }
+            50%{ transform:translateY(-15px); }
+            100%{ transform:translateY(0px); }
+        }
+
+        h1{
+            font-size:65px;
+            margin-bottom:15px;
+            z-index:2;
+        }
+
+        .descripcion{
+            width:80%;
+            max-width:900px;
+            font-size:21px;
+            line-height:1.8;
+            z-index:2;
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.08);
+            border-radius:25px;
+            padding:35px;
+            margin-top:35px;
+            backdrop-filter:blur(10px);
+            transition:0.4s;
+            box-shadow:0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .card:hover{
+            transform:scale(1.02);
+        }
+
+        h2{
+            margin-bottom:20px;
+            color:#60a5fa;
+            font-size:35px;
+        }
+
+        p{
+            line-height:1.8;
+            font-size:18px;
+        }
+
+        ul{
+            list-style:none;
+        }
+
+        li{
+            background:#2563eb;
+            margin:15px 0;
+            padding:15px;
+            border-radius:12px;
+            transition:0.3s;
+            font-size:18px;
+        }
+
+        li:hover{
+            background:white;
+            color:#2563eb;
+            transform:translateX(10px);
+        }
+
+        .info{
+            font-size:22px;
+            text-align:center;
+            color:#facc15;
+            line-height:1.8;
+        }
+
+        .contacto{
+            text-align:center;
+            font-size:22px;
+            margin-top:20px;
+        }
+
+        .contacto a{
+            color:#60a5fa;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .contacto a:hover{
+            color:#93c5fd;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#020617;
+            margin-top:40px;
+            font-size:18px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo"></div>
+
+        <h1>LambaTech</h1>
+
+        <p class="descripcion">
+            Bienvenido a <b>LambaTech</b>, tu centro de soporte técnico especializado
+            en reparación, mantenimiento y optimización de <b>teléfonos celulares,
+            computadoras de escritorio y laptops</b>. Nos enfocamos en brindar
+            soluciones rápidas y eficientes tanto en <b>hardware</b> como en
+            <b>software</b>, asegurando el mejor rendimiento para tus dispositivos.
+            Nuestro objetivo es ofrecer un servicio confiable, profesional y de
+            calidad para que tus equipos funcionen como nuevos.
+        </p>
+
+    </header>
+
+    <section>
+
+        <div class="card">
+
+            <h2> Sobre Nosotros</h2>
+
+            <p>
+                En <b>LambaTech</b> contamos con servicios de diagnóstico, reparación,
+                mantenimiento preventivo y correctivo para dispositivos tecnológicos.
+                Nos especializamos en resolver problemas relacionados con sistemas,
+                rendimiento lento, virus, fallos internos, instalación de programas
+                y reemplazo de componentes dañados.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2> Servicios</h2>
+
+            <ul>
+                <li> Reparación de hardware para computadoras y celulares</li>
+                <li> Instalación y actualización de software</li>
+                <li> Eliminación de virus y optimización del sistema</li>
+                <li> Formateo e instalación de sistemas operativos</li>
+                <li> Mantenimiento de computadoras de escritorio y laptops</li>
+                <li> Reparación de teléfonos móviles</li>
+                <li> Configuración de seguridad y respaldo de archivos</li>
+                <li> Mejora de rendimiento de equipos lentos</li>
+            </ul>
+
+        </div>
+
+        <div class="card">
+
+            <h2> Horarios de Atención</h2>
+
+            <p class="info">
+                Lunes a Viernes <br>
+                <b>08:00 AM - 05:00 PM</b>
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2> Contacto</h2>
+
+            <p class="contacto">
+                 Instagram:
+                <a href="https://instagram.com/teolucas16" target="_blank">
+                    @teolucas16
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        Página creada por Lucas Cabañas  | LambaTech Soporte Técnico
+    </footer>
+
+</body>
+</html>

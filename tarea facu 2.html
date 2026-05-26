@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google - Empresa Tecnológica</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color:white;
+            overflow-x:hidden;
+        }
+
+        header{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            padding:40px;
+            position:relative;
+        }
+
+        header::before{
+            content:"";
+            position:absolute;
+            width:350px;
+            height:350px;
+            background:#4285F4;
+            border-radius:50%;
+            filter:blur(130px);
+            animation:mover 6s infinite alternate;
+        }
+
+        @keyframes mover{
+            from{
+                transform:translate(-100px,-50px);
+            }
+            to{
+                transform:translate(100px,50px);
+            }
+        }
+
+        .logo{
+            width:180px;
+            margin-bottom:20px;
+            animation:flotar 3s ease-in-out infinite;
+            z-index:2;
+        }
+
+        @keyframes flotar{
+            0%{ transform:translateY(0px); }
+            50%{ transform:translateY(-15px); }
+            100%{ transform:translateY(0px); }
+        }
+
+        h1{
+            font-size:65px;
+            margin-bottom:15px;
+            z-index:2;
+        }
+
+        .descripcion{
+            width:80%;
+            max-width:900px;
+            font-size:21px;
+            line-height:1.8;
+            z-index:2;
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.08);
+            border-radius:25px;
+            padding:35px;
+            margin-top:35px;
+            backdrop-filter:blur(10px);
+            transition:0.4s;
+            box-shadow:0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .card:hover{
+            transform:scale(1.02);
+        }
+
+        h2{
+            margin-bottom:20px;
+            color:#60a5fa;
+            font-size:35px;
+        }
+
+        p{
+            line-height:1.8;
+            font-size:18px;
+        }
+
+        ul{
+            list-style:none;
+        }
+
+        li{
+            background:#2563eb;
+            margin:15px 0;
+            padding:15px;
+            border-radius:12px;
+            transition:0.3s;
+            font-size:18px;
+        }
+
+        li:hover{
+            background:white;
+            color:#2563eb;
+            transform:translateX(10px);
+        }
+
+        .pais{
+            font-size:25px;
+            text-align:center;
+            margin-top:20px;
+            color:#facc15;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#020617;
+            margin-top:40px;
+            font-size:18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+        alt="Logo Google">
+
+        <h1>Google</h1>
+
+        <p class="descripcion">
+            Google es una de las empresas tecnológicas más influyentes y reconocidas del mundo.
+            Fue fundada el 4 de septiembre de 1998 por Larry Page y Sergey Brin mientras eran
+            estudiantes de doctorado en la Universidad de Stanford. La empresa nació con el objetivo
+            de organizar la enorme cantidad de información disponible en internet y hacerla útil,
+            accesible y rápida para todas las personas del mundo. Actualmente, Google forma parte de
+            Alphabet Inc., una compañía multinacional enfocada en innovación tecnológica, inteligencia
+            artificial, computación en la nube y desarrollo de software.
+        </p>
+
+    </header>
+
+    <section>
+
+        <div class="card">
+
+            <h2> Historia de la Empresa</h2>
+
+            <p>
+                Google comenzó como un proyecto universitario llamado “BackRub”, un motor de búsqueda
+                diseñado para analizar la relación entre páginas web mediante enlaces. Gracias a su
+                precisión y velocidad, el proyecto creció rápidamente y terminó convirtiéndose en Google.
+                A lo largo de los años, la empresa expandió sus servicios más allá del buscador,
+                desarrollando herramientas de comunicación, almacenamiento, productividad y entretenimiento.
+            </p>
+
+            <br>
+
+            <p>
+                Hoy en día, Google tiene oficinas en múltiples países y emplea a miles de personas
+                especializadas en tecnología, programación, diseño, inteligencia artificial y ciberseguridad.
+                La empresa invierte constantemente en investigación para mejorar la experiencia digital
+                de millones de usuarios.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2> ¿Qué Hace Google?</h2>
+
+            <p>
+                Google se dedica al desarrollo de tecnologías digitales y servicios basados en internet.
+                Su principal función es facilitar el acceso a información mediante su motor de búsqueda,
+                pero también trabaja en herramientas para empresas, educación, mapas, entretenimiento,
+                correo electrónico, teléfonos inteligentes y servicios en la nube.
+            </p>
+
+            <br>
+
+            <p>
+                Además, Google es una empresa líder en inteligencia artificial. Ha desarrollado sistemas
+                avanzados para reconocimiento de voz, traducción automática, asistentes virtuales y
+                automatización de tareas digitales. También participa en proyectos relacionados con
+                vehículos autónomos, salud digital y energías sostenibles.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2> Productos y Servicios Principales</h2>
+
+            <ul>
+                <li>🔍 <b>Google Search:</b> Motor de búsqueda más utilizado del mundo.</li>
+                <li>📧 <b>Gmail:</b> Servicio de correo electrónico gratuito.</li>
+                <li>📹 <b>YouTube:</b> Plataforma de videos adquirida por Google.</li>
+                <li>📱 <b>Android:</b> Sistema operativo utilizado en millones de teléfonos.</li>
+                <li>☁️ <b>Google Drive:</b> Plataforma de almacenamiento en la nube.</li>
+                <li>🗺️ <b>Google Maps:</b> Aplicación de navegación y mapas digitales.</li>
+                <li>🌐 <b>Google Chrome:</b> Navegador web rápido y seguro.</li>
+                <li>🤖 <b>Google Assistant:</b> Asistente virtual con inteligencia artificial.</li>
+                <li>🎓 <b>Google Classroom:</b> Plataforma utilizada en educación.</li>
+            </ul>
+
+        </div>
+
+        <div class="card">
+
+            <h2> Importancia de Google en el Mundo</h2>
+
+            <p>
+                Google es considerada una de las empresas más importantes de la era digital debido al
+                impacto que tiene en la vida cotidiana de millones de personas. Muchas actividades
+                diarias dependen de sus servicios, como enviar correos, buscar información, usar mapas,
+                ver videos o almacenar archivos.
+            </p>
+
+            <br>
+
+            <p>
+                Además, Google ha revolucionado el acceso al conocimiento, permitiendo que estudiantes,
+                profesores, empresas y usuarios puedan encontrar información de forma rápida y sencilla.
+                También ha contribuido significativamente al desarrollo de la inteligencia artificial y
+                nuevas tecnologías del futuro.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2> País de Origen</h2>
+
+            <p class="pais">
+                Estados Unidos 🇺🇸
+            </p>
+
+            <p style="text-align:center; margin-top:15px;">
+                La sede principal de Google se encuentra en Mountain View, California,
+                en un complejo conocido como “Googleplex”.
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        Página creada por Lucas Cabañas  | Investigación sobre Google
+    </footer>
+
+</body>
+</html>

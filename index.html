@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web - Lucas Cabañas</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color:white;
+            overflow-x:hidden;
+        }
+
+        header{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            padding:40px;
+            position:relative;
+        }
+
+        header::before{
+            content:"";
+            position:absolute;
+            width:400px;
+            height:400px;
+            background:#2563eb;
+            border-radius:50%;
+            filter:blur(140px);
+            animation:mover 6s infinite alternate;
+        }
+
+        @keyframes mover{
+            from{
+                transform:translate(-120px,-60px);
+            }
+            to{
+                transform:translate(120px,60px);
+            }
+        }
+
+        .icono{
+            font-size:90px;
+            margin-bottom:20px;
+            z-index:2;
+            animation:flotar 3s ease-in-out infinite;
+        }
+
+        @keyframes flotar{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(-15px);}
+            100%{transform:translateY(0);}
+        }
+
+        h1{
+            font-size:55px;
+            margin-bottom:15px;
+            z-index:2;
+        }
+
+        .descripcion{
+            width:85%;
+            max-width:900px;
+            font-size:20px;
+            line-height:1.8;
+            z-index:2;
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        .titulo{
+            text-align:center;
+            margin-bottom:40px;
+            font-size:40px;
+            color:#60a5fa;
+        }
+
+        .contenedor{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+            gap:30px;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.08);
+            border-radius:25px;
+            padding:35px;
+            backdrop-filter:blur(10px);
+            box-shadow:0 8px 25px rgba(0,0,0,0.3);
+            transition:0.4s;
+            text-align:center;
+        }
+
+        .card:hover{
+            transform:translateY(-10px) scale(1.03);
+        }
+
+        .emoji{
+            font-size:60px;
+            margin-bottom:15px;
+        }
+
+        h2{
+            margin-bottom:15px;
+            color:#60a5fa;
+            font-size:28px;
+        }
+
+        p{
+            line-height:1.8;
+            font-size:17px;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 22px;
+            background:#2563eb;
+            color:white;
+            text-decoration:none;
+            border-radius:12px;
+            transition:0.3s;
+            font-size:17px;
+        }
+
+        .btn:hover{
+            background:white;
+            color:#2563eb;
+            transform:scale(1.05);
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#020617;
+            margin-top:50px;
+            font-size:18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="icono">💻</div>
+
+    <h1>Página Principal</h1>
+
+    <p class="descripcion">
+        Bienvenido a mi portafolio web.  
+        En esta página encontrarás todos los trabajos y proyectos que he realizado durante mi aprendizaje en HTML y CSS.
+
+        <br><br>
+
+        Aquí están reunidos ejercicios, investigaciones, páginas web, formularios y proyectos prácticos
+        que muestran mi progreso en el desarrollo web y diseño de interfaces.
+    </p>
+
+</header>
+
+<section>
+
+    <h2 class="titulo">Mis Proyectos</h2>
+
+    <div class="contenedor">
+
+        <div class="card">
+            <div class="emoji">👤</div>
+            <h2>Mi Página Personal</h2>
+            <p>Información sobre mí, hobbies y gustos personales.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%201.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🌍</div>
+            <h2>Investigación Google</h2>
+            <p>Historia, productos e impacto de Google.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%202.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💻</div>
+            <h2>Sistemas Operativos</h2>
+            <p>Comparación entre Windows, Linux y MacOS.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%203.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🔧</div>
+            <h2>LambaTech</h2>
+            <p>Soporte técnico para celulares y computadoras.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%204.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🌐</div>
+            <h2>Hosting y Dominio</h2>
+            <p>Investigación sobre hosting, dominios y costos.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%205.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📄</div>
+            <h2>Currículum Vitae</h2>
+            <p>CV con perfil profesional, habilidades y contacto.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%206.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📰</div>
+            <h2>Noticias Tecnológicas</h2>
+            <p>Noticias sobre IA, videojuegos y tecnología.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%207.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🍔</div>
+            <h2>Menú Restaurante</h2>
+            <p>Restaurante con comidas, precios y ubicación.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%208.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🎌</div>
+            <h2>Anime - Dororo</h2>
+            <p>Historia y personajes del anime Dororo.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%209.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🏫</div>
+            <h2>Institucional</h2>
+            <p>Universidad con misión, visión y servicios.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%2010.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📝</div>
+            <h2>Formulario HTML</h2>
+            <p>Registro con datos personales y comentarios.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%2011.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🌐</div>
+            <h2>Mundo Web</h2>
+            <p>Frontend, Backend, Full Stack y salarios.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%2012.html" class="btn">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🚀</div>
+            <h2>Mini Sitio Web</h2>
+            <p>Web con páginas conectadas entre sí.</p>
+            <a href="file:///C:/Users/rodri/OneDrive/Im%C3%A1genes/index.html/tarea%20facu%2013.html" class="btn">Ver Proyecto</a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    Página Principal creada por Lucas Cabañas
+</footer>
+
+</body>
+</html>

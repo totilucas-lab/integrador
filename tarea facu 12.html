@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investigando el Mundo Web</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    overflow-x:hidden;
+}
+
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    position:relative;
+    overflow:hidden;
+}
+
+header::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#2563eb;
+    border-radius:50%;
+    filter:blur(150px);
+    animation:mover 6s infinite alternate;
+}
+
+@keyframes mover{
+    from{
+        transform:translate(-120px,-60px);
+    }
+
+    to{
+        transform:translate(120px,60px);
+    }
+}
+
+h1{
+    font-size:65px;
+    z-index:2;
+}
+
+.subtitulo{
+    max-width:900px;
+    margin-top:20px;
+    line-height:1.8;
+    font-size:20px;
+    z-index:2;
+}
+
+
+section{
+    padding:70px 10%;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:40px;
+    color:#60a5fa;
+    font-size:40px;
+}
+
+.contenedor{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:35px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+
+.card p{
+    line-height:1.9;
+    font-size:17px;
+}
+
+
+.tech{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    gap:20px;
+}
+
+.tech-box{
+    background:#1e293b;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.tech-box:hover{
+    transform:scale(1.05);
+}
+
+
+.salario{
+    text-align:center;
+    background:rgba(37,99,235,0.2);
+    padding:40px;
+    border-radius:30px;
+}
+
+.salario h2{
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+
+.salario p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <h1> Investigando el Mundo Web</h1>
+
+    <p class="subtitulo">
+        El desarrollo web es una de las áreas tecnológicas más importantes
+        actualmente. Existen diferentes tipos de desarrolladores,
+        tecnologías modernas y oportunidades laborales en todo el mundo.
+    </p>
+
+</header>
+
+<section>
+
+<h2 class="titulo">Tipos de Desarrolladores Web</h2>
+
+<div class="contenedor">
+
+    <div class="card">
+        <h2> ¿Qué es Frontend?</h2>
+
+        <p>
+            Un desarrollador Frontend es el encargado de crear la parte visual
+            de una página web, es decir, todo lo que el usuario ve e interactúa.
+            Trabaja con diseños, botones, formularios, animaciones y organización
+            del contenido.
+        </p>
+
+        <p>
+            Utiliza tecnologías como HTML, CSS y JavaScript para lograr
+            que los sitios sean atractivos, rápidos y fáciles de usar.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2> ¿Qué es Backend?</h2>
+
+        <p>
+            El desarrollador Backend trabaja en la parte interna del sistema.
+            Se encarga de bases de datos, servidores, seguridad y la lógica
+            que hace funcionar las aplicaciones web.
+        </p>
+
+        <p>
+            Aunque el usuario no lo vea, el Backend es esencial para que
+            los datos se procesen correctamente.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2> ¿Qué es Full Stack?</h2>
+
+        <p>
+            Un desarrollador Full Stack tiene conocimientos tanto de Frontend
+            como de Backend, pudiendo construir un sitio web completo.
+        </p>
+
+        <p>
+            Son profesionales muy demandados porque pueden trabajar
+            en diferentes partes del proyecto.
+        </p>
+    </div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo"> Tecnologías Utilizadas Actualmente</h2>
+
+<div class="tech">
+
+    <div class="tech-box">
+        <h3>HTML</h3>
+        <p>Estructura de páginas web.</p>
+    </div>
+
+    <div class="tech-box">
+        <h3>CSS</h3>
+        <p>Diseño y estilos visuales.</p>
+    </div>
+
+    <div class="tech-box">
+        <h3>JavaScript</h3>
+        <p>Interactividad y funciones.</p>
+    </div>
+
+    <div class="tech-box">
+        <h3>React</h3>
+        <p>Framework moderno para interfaces.</p>
+    </div>
+
+    <div class="tech-box">
+        <h3>Node.js</h3>
+        <p>Backend con JavaScript.</p>
+    </div>
+
+    <div class="tech-box">
+        <h3>Python</h3>
+        <p>Backend, IA y automatización.</p>
+    </div>
+
+    <div class="tech-box">
+        <h3>PHP</h3>
+        <p>Desarrollo web del lado servidor.</p>
+    </div>
+
+    <div class="tech-box">
+        <h3>MySQL</h3>
+        <p>Gestión de bases de datos.</p>
+    </div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="salario">
+
+    <h2> ¿Cuánto gana un desarrollador web?</h2>
+
+    <p>
+        El salario depende del país, experiencia y conocimientos.
+        Un desarrollador junior puede ganar entre
+        <strong>500 y 1.500 USD mensuales</strong>,
+        mientras que un desarrollador con experiencia puede superar
+        los <strong>3.000 a 6.000 USD</strong> o más,
+        especialmente trabajando de forma remota para empresas internacionales.
+    </p>
+
+</div>
+
+</section>
+
+<footer>
+     Investigación sobre el Mundo Web - Lucas Cabañas
+</footer>
+
+</body>
+</html>

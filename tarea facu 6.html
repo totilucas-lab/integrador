@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae - Lucas Cabañas</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color:white;
+            overflow-x:hidden;
+        }
+
+        header{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            padding:40px;
+            position:relative;
+        }
+
+        header::before{
+            content:"";
+            position:absolute;
+            width:400px;
+            height:400px;
+            background:#2563eb;
+            border-radius:50%;
+            filter:blur(140px);
+            animation:mover 6s infinite alternate;
+        }
+
+        @keyframes mover{
+            from{
+                transform:translate(-120px,-60px);
+            }
+            to{
+                transform:translate(120px,60px);
+            }
+        }
+
+        .perfil{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            object-fit:cover;
+            border:4px solid rgba(255,255,255,0.2);
+            box-shadow:0 0 30px rgba(37,99,235,0.6);
+            margin-bottom:20px;
+            z-index:2;
+            animation:flotar 3s ease-in-out infinite;
+        }
+
+        @keyframes flotar{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(-15px);}
+            100%{transform:translateY(0);}
+        }
+
+        h1{
+            font-size:60px;
+            margin-bottom:10px;
+            z-index:2;
+        }
+
+        .subtitulo{
+            font-size:24px;
+            color:#93c5fd;
+            margin-bottom:20px;
+            z-index:2;
+        }
+
+        .descripcion{
+            width:85%;
+            max-width:900px;
+            font-size:20px;
+            line-height:1.8;
+            z-index:2;
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.08);
+            border-radius:25px;
+            padding:35px;
+            margin-top:35px;
+            backdrop-filter:blur(10px);
+            box-shadow:0 8px 25px rgba(0,0,0,0.3);
+            transition:0.4s;
+        }
+
+        .card:hover{
+            transform:scale(1.02);
+        }
+
+        h2{
+            color:#60a5fa;
+            font-size:35px;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:18px;
+            line-height:1.9;
+        }
+
+        ul{
+            list-style:none;
+        }
+
+        li{
+            background:#2563eb;
+            margin:12px 0;
+            padding:15px;
+            border-radius:12px;
+            transition:0.3s;
+            font-size:18px;
+        }
+
+        li:hover{
+            background:white;
+            color:#2563eb;
+            transform:translateX(10px);
+        }
+
+        .contacto{
+            text-align:center;
+            font-size:22px;
+            line-height:2;
+            color:#facc15;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#020617;
+            margin-top:50px;
+            font-size:18px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <img class="perfil"
+    src="c:\Users\rodri\Downloads\WhatsApp Image 2026-05-25 at 18.15.48.jpeg">
+
+    <h1>Lucas Cabañas</h1>
+
+    <p class="subtitulo">
+        Estudiante de Analisis de sistemas
+    </p>
+
+    <p class="descripcion">
+        Soy una persona responsable, comprometida y apasionada por la tecnología,
+        el aprendizaje constante y la informática. Me interesa el desarrollo de
+        software, soporte técnico y la resolución de problemas tecnológicos.
+        Tengo facilidad para aprender nuevas herramientas digitales, trabajar
+        en equipo y adaptarme a nuevos desafíos. Busco seguir desarrollando mis
+        habilidades técnicas y profesionales para crecer en el área tecnológica.
+    </p>
+
+</header>
+
+<section>
+
+    <div class="card">
+
+        <h2> Perfil Profesional</h2>
+
+        <p>
+            Estudiante de Ingeniería en Informática con conocimientos básicos
+            en tecnologías de la información, mantenimiento de computadoras,
+            soporte técnico, herramientas digitales y programación. Interesado
+            en el aprendizaje continuo y en adquirir experiencia profesional
+            dentro del ámbito tecnológico.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2> Habilidades</h2>
+
+        <ul>
+            <li> Conocimientos básicos de informática</li>
+            <li> Soporte técnico de computadoras</li>
+            <li> Mantenimiento básico de celulares</li>
+            <li> Desarrollo web básico (HTML y CSS)</li>
+            <li> Resolución de problemas tecnológicos</li>
+            <li> Trabajo en equipo</li>
+            <li> Aprendizaje rápido</li>
+            <li> Interés en idiomas</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2> Estudios</h2>
+
+        <p>
+            <b>Ingeniería en Informática</b><br>
+            Actualmente cursando el <b>2° semestre</b>.
+        </p>
+
+        <br>
+
+        <p>
+            Formación enfocada en informática, programación,
+            sistemas computacionales y tecnologías digitales.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2> Experiencia</h2>
+
+        <p>
+            Actualmente en formación académica, desarrollando proyectos
+            personales y universitarios relacionados con páginas web,
+            investigación tecnológica, soporte técnico y herramientas digitales.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+    <h2>📞 Contacto</h2>
+
+    <div class="contacto">
+        📷 Instagram: 
+        <a href="https://instagram.com/teolucas16" target="_blank">
+            @teolucas16
+        </a>
+        📱Telefono: 
+        <a href=" https://wa.me/0986533105" target="_blank">
+            0986533105
+            </a>
+        <br>
+             Correo: teodorolucas610@gmail.com <br>
+             Paraguay
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    Currículum Vitae de Lucas Cabañas 💻
+</footer>
+
+</body>
+</html>

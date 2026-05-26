@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting y Dominio - Investigación Completa</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color:white;
+            overflow-x:hidden;
+        }
+
+        header{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            padding:40px;
+            position:relative;
+        }
+
+        header::before{
+            content:"";
+            position:absolute;
+            width:400px;
+            height:400px;
+            background:#2563eb;
+            border-radius:50%;
+            filter:blur(140px);
+            animation:mover 6s infinite alternate;
+        }
+
+        @keyframes mover{
+            from{ transform:translate(-120px,-60px); }
+            to{ transform:translate(120px,60px); }
+        }
+
+        .icono{
+            font-size:90px;
+            margin-bottom:20px;
+            z-index:2;
+            animation:flotar 3s ease-in-out infinite;
+        }
+
+        @keyframes flotar{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(-15px);}
+            100%{transform:translateY(0);}
+        }
+
+        h1{
+            font-size:60px;
+            margin-bottom:15px;
+            z-index:2;
+        }
+
+        .descripcion{
+            width:85%;
+            max-width:950px;
+            font-size:20px;
+            line-height:1.8;
+            z-index:2;
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.08);
+            border-radius:25px;
+            padding:40px;
+            margin-top:35px;
+            backdrop-filter:blur(10px);
+            box-shadow:0 8px 25px rgba(0,0,0,0.3);
+            transition:0.4s;
+        }
+
+        .card:hover{
+            transform:scale(1.02);
+        }
+
+        h2{
+            margin-bottom:20px;
+            color:#60a5fa;
+            font-size:35px;
+        }
+
+        p{
+            line-height:1.9;
+            font-size:18px;
+        }
+
+        ul{
+            list-style:none;
+        }
+
+        li{
+            background:#2563eb;
+            margin:12px 0;
+            padding:15px;
+            border-radius:12px;
+            transition:0.3s;
+            font-size:18px;
+        }
+
+        li:hover{
+            background:white;
+            color:#2563eb;
+            transform:translateX(10px);
+        }
+
+        .highlight{
+            color:#facc15;
+            font-weight:bold;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#020617;
+            margin-top:40px;
+            font-size:18px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="icono"></div>
+
+    <h1>Hosting y Dominio Web</h1>
+
+    <p class="descripcion">
+        Para que una página web funcione en internet se necesitan dos elementos fundamentales:
+        el <span class="highlight">hosting</span> y el <span class="highlight">dominio</span>.
+        Esta investigación explica qué son, cómo funcionan, sus tipos, costos y empresas que los ofrecen.
+    </p>
+
+</header>
+
+<section>
+
+    <div class="card">
+
+        <h2> ¿Qué es un Hosting?</h2>
+
+        <p>
+            El hosting es un servicio que permite almacenar todos los archivos de una página web
+            en un servidor conectado a internet. Esto hace posible que cualquier persona pueda
+            visitar la página en cualquier momento del día.
+        </p>
+
+        <br>
+
+        <p>
+            Sin hosting, una página web no puede existir en internet, ya que no tendría dónde guardar
+            su información como imágenes, videos, código o bases de datos.
+        </p>
+
+        <br>
+
+        <p>
+            Se puede comparar con una “casa digital” donde vive la página web.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2> Tipos de Hosting</h2>
+
+        <ul>
+            <li><b>Shared Hosting:</b> varios sitios comparten un mismo servidor (más barato).</li>
+            <li><b>VPS Hosting:</b> servidor virtual privado con más rendimiento.</li>
+            <li><b>Cloud Hosting:</b> usa varios servidores conectados (más estable).</li>
+            <li><b>Dedicated Hosting:</b> un servidor completo solo para una web.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2> ¿Qué es un Dominio?</h2>
+
+        <p>
+            El dominio es el nombre único que identifica una página web en internet.
+            Es lo que las personas escriben en el navegador para acceder a un sitio.
+        </p>
+
+        <br>
+
+        <p>
+            Por ejemplo: <span class="highlight">google.com</span>, <span class="highlight">youtube.com</span>.
+            Sin dominios, tendríamos que usar números IP difíciles de recordar.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2> Tipos de Dominios</h2>
+
+        <ul>
+            <li><b>.com</b> → uso comercial</li>
+            <li><b>.org</b> → organizaciones</li>
+            <li><b>.edu</b> → educación</li>
+            <li><b>.gov</b> → gobiernos</li>
+            <li><b>.com.py</b> → dominios de Paraguay</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2> ¿Cuánto cuesta?</h2>
+
+        <p>
+            El costo del hosting depende del tipo de servicio. Los más básicos pueden costar entre
+            <span class="highlight">$2 a $10 USD al mes</span>, mientras que los avanzados pueden superar
+            los <span class="highlight">$50 USD mensuales</span>.
+        </p>
+
+        <br>
+
+        <p>
+            El dominio normalmente cuesta entre <span class="highlight">$10 a $20 USD al año</span>,
+            dependiendo de la extensión y la empresa.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2> Empresas que ofrecen Hosting y Dominios</h2>
+
+        <ul>
+            <li>Hostinger</li>
+            <li>GoDaddy</li>
+            <li>Bluehost</li>
+            <li>SiteGround</li>
+            <li>Namecheap</li>
+            <li>AWS (Amazon Web Services)</li>
+            <li>Google Cloud</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2> ¿Cómo funcionan juntos?</h2>
+
+        <p>
+            El dominio funciona como la dirección de la casa, mientras que el hosting es la casa donde
+            está guardado todo el contenido. Ambos trabajan juntos para que una página web funcione.
+        </p>
+
+        <br>
+
+        <p>
+            Cuando una persona escribe un dominio en el navegador, este lo conecta con el hosting donde
+            están los archivos y carga la página web en segundos.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2> Conclusión</h2>
+
+        <p>
+            El hosting y el dominio son esenciales para cualquier página web moderna.
+            Sin ellos, no sería posible publicar sitios en internet. Son la base de la
+            comunicación digital actual y permiten que empresas, negocios y personas
+            compartan información con el mundo.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    Página creada por Lucas Cabañas  | Investigación Completa Hosting y Dominio
+</footer>
+
+</body>
+</html>
